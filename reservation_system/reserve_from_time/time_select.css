@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+.header{
+    margin: auto;
+    position: relative;
+}
+
+.headline{
+    position: absolute;
+    left: 5%;
+    font-size: 26px;
+}
+
+.login_status{
+    position: absolute;
+    right: 2%;
+    font-size: 23px;
+}
+
+.main{
+    top: 100px;
+    margin: auto;
+    position: relative;
+}
+
+.left{
+    width: 40%;
+    position: absolute;
+    left: 3%;
+    text-align: center;
+}
+
+.sentence{
+    font-size: 27px;
+}
+
+.calendar{
+    margin-bottom: 10em;
+}
+
+.date{
+    width: 200px;
+    height: 33px;
+    font-size: 23px;
+}
+
+.start{
+    font-size: 28px;
+    margin-top: 2em;
+}
+
+.time{
+    width: 120px;
+    height: 33px;
+    font-size: 25px;
+}
+
+.end{
+    font-size: 28px;
+    margin-top: 2em;
+}
+
+.search{
+    text-align: center;
+}
+
+.search_button{
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: #191930;
+    background-color: #191970;
+    justify-content: space-around;
+    font-size: 25px;
+    align-items: center;
+    color: white;
+}
+
+.search_button:hover{
+    border-color: #191960;
+    background-color: #1950bb;
+}
+
+.right{
+    width: 49%;
+    position: absolute;
+    left: 48%;
+}
+
+.maparea{
+
+}
+
+.floor{
+
+}
+
+.detail{
+
+}
+
+.reserve{
+
+}

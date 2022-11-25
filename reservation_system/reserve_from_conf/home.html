@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>会議室予約システム</title>
+
+    <head>
+        <link rel="stylesheet" href="calendar.css">
+        <script src="calendar.js"></script>
+        <script src="../jquery-3.6.1.min.js"></script>
+        <script src="js/slide.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <style type="text/css">
+            id {
+                float: right;
+            }
+
+            .item {
+                align: right;
+                border: 1;
+                border: solid 1px;
+                width: 400;
+            }
+        </style>
+    </head>
+</head>
+
+<body>
+    <id>
+        さんがログイン中です(部署)
+    </id>
+    <h1>会議室予約システム</h1>
+
+    <table class="item">
+        <tr>
+            <td>会議室</td>
+            <td>多目的室1</td>
+        </tr>
+        <tr>
+            <td>備品</td>
+            <td>プロジェクター,マイク,ワゴン,椅子10脚,テーブル4台</td>
+        </tr>
+        <tr>
+            <td>定員</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>内線番号</td>
+            <td>XX-XXXX</td>
+        </tr>
+        <tr>
+            <td>利用事業所</td>
+            <td>本店</td>
+        </tr>
+    </table>
+
+    会議室と利用時間を選択してください<br>
+    会議室：
+
+    <div class="img__inner">
+        <img class="img">
+    </div><!-- .img__inner -->
+    <!-- <div id="changeBtn" class="btn btn-primary mt-3">クリック</div>.btn btn-primary -->
+    <a id="changeBtnL" class="triangle-left"></a>
+    <a id="changeBtnR" class="triangle-right"></a>
+
+    <div class="wrapper">
+        <!-- xxxx年xx月を表示 -->
+        <h1 id="header"></h1>
+
+        <!-- ボタンクリックで月移動 -->
+        <div id="next-prev-button">
+            <button id="prev" onclick="prev()">‹</button>
+            <button id="next" onclick="next()">›</button>
+        </div>
+
+        <!-- カレンダー -->
+        <div id="calendar"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>予約手順b（時間での検索）</title>
+        <link rel="stylesheet" href="time_select.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <p class="headline">会議室予約システム</p>
+            <p class="login_status">〇〇さんがログイン中です</p>
+        </div>
+
+        <div class="main">
+            <div class="left">
+                <p class="sentence">
+                    予約したい日と<br>
+                    時間を選択してください
+                </p>
+
+                <p class="calendar">
+                    <input type="date" class="date" name="date" value="2022-11-18">
+                </p>
+
+                <p class="start">
+                    開始時間：
+                    <input type="time" class="time" name="start_time" value="07:00">
+                </p>
+
+                <p class="end">
+                    終了時間：
+                    <input type="time" class="time" name="end_time" value="07:00">
+                </p>
+
+                <div class="search">
+                    <button class="search_button" type="submit">
+                        検索
+                    </button>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="maparea">
+                    <table border="1" width="500px" height="350px">
+                        <tr><td></td></tr>
+                    </table>
+                </div>
+
+                <div class="floor">
+                    <button onclick="">◀</button>
+                    １F
+                    <button onclick="">▶</button>
+                </div>
+
+                <div class="detail">
+                    <table border="1">
+                        <tr>
+                            <td>会議室</td><td>多目的室１</td>
+                        </tr>
+                        <tr>
+                            <td>備品</td><td>プロジェクター、マイク、ワゴン</td>
+                        </tr>
+                        <tr>
+                            <td>定員</td><td>10</td>
+                        </tr>
+                        <tr>
+                            <td>内線番号</td><td>XX-XXXX</td>
+                        </tr>
+                        <tr>
+                            <td>利用事業所</td><td>本店</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <p class="reserve">
+                    <button class="reserve_button" type="submit">
+                        予約
+                    </button>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
